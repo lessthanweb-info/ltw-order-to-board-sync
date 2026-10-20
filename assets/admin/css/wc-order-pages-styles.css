@@ -1,0 +1,24 @@
+ul.ltw-order-to-board-sync-card-history li.content {
+    margin-bottom: 15px;
+}
+ul.ltw-order-to-board-sync-card-history li.content .note {
+    margin-bottom: 4px;
+    padding: 10px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+}
+ul.ltw-order-to-board-sync-card-history li.content .date {
+    font-size: 11px;
+    color: #808080;
+}
+
+td.column-ltw_order_to_board_sync_data svg {
+    vertical-align: middle;
+}
+td.column-ltw_order_to_board_sync_data .ltw-order-to-board-sync-tip-empty svg {
+    opacity: 0.5;
+}
+
+.ltw-order-to-board-sync .ltw-order-to-board-sync-result {
+    margin-top: 8px
+}

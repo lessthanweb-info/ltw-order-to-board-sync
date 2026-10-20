@@ -1,0 +1,8 @@
+{
+	"intelephense.environment.includePaths": [
+		"/Users/anze/Development/wordpress"
+	],
+	"intelephense.stubs": [
+		"wordpress"
+	]
+}

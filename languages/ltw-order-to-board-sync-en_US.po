@@ -1,0 +1,1415 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LTW Order-to-Board Sync\n"
+"POT-Creation-Date: 2026-10-17 09:49+0200\n"
+"PO-Revision-Date: 2026-10-17 09:49+0200\n"
+"Last-Translator: \n"
+"Language-Team: lessthanweb\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_attr_e;_x:1,2c;_n:1,2;esc_html_e;esc_html_x:1,2c;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/class-admin-assets.php:69 classes/class-admin-page.php:74
+msgid "Logs"
+msgstr ""
+
+#: classes/class-admin-assets.php:70 classes/class-admin-page.php:684
+msgid "Currently there are no logs available."
+msgstr ""
+
+#: classes/class-admin-assets.php:71
+msgid "Are you sure you want to delete all logs? This action cannot be undone."
+msgstr ""
+
+#: classes/class-admin-assets.php:72
+msgid "Error:"
+msgstr ""
+
+#: classes/class-admin-assets.php:73
+msgid "No lists found for board_id:"
+msgstr ""
+
+#: classes/class-admin-help.php:42 classes/class-admin-help.php:106
+msgid "Setup guidance"
+msgstr ""
+
+#: classes/class-admin-help.php:43
+msgid "Placeholders"
+msgstr ""
+
+#: classes/class-admin-help.php:108
+msgid ""
+"Follow these steps to connect WooCommerce to Trello and start creating cards "
+"automatically."
+msgstr ""
+
+#: classes/class-admin-help.php:110
+msgid "Set up Trello OAuth 2.0"
+msgstr ""
+
+#: classes/class-admin-help.php:112
+#, php-format
+msgid "Open the %s to create or configure your Trello app."
+msgstr ""
+
+#: classes/class-admin-help.php:112
+msgid "Trello apps administration page"
+msgstr ""
+
+#: classes/class-admin-help.php:115
+msgid "Log in to your Trello account."
+msgstr ""
+
+#: classes/class-admin-help.php:116
+msgid ""
+"Create or select your Trello app, open its OAuth 2.0 settings, and choose "
+"the confidential client type."
+msgstr ""
+
+#: classes/class-admin-help.php:117
+msgid ""
+"Add the exact OAuth callback URL shown in the plugin settings and enable the "
+"read:member:trello, read:board:trello, and write:board:trello scopes."
+msgstr ""
+
+#: classes/class-admin-help.php:118
+msgid ""
+"Copy the OAuth client ID and client secret into the plugin settings. Save "
+"the settings before connecting."
+msgstr ""
+
+#: classes/class-admin-help.php:121
+msgid ""
+"Keep the OAuth client secret private. The plugin requests offline access so "
+"it can refresh its short-lived access token automatically."
+msgstr ""
+
+#: classes/class-admin-help.php:124
+#, php-format
+msgid "Open the %s tab and enter your OAuth client ID and client secret."
+msgstr ""
+
+#: classes/class-admin-help.php:124
+msgid "Settings → Trello OAuth 2.0"
+msgstr ""
+
+#: classes/class-admin-help.php:125
+msgid ""
+"Click Connect Trello account and approve access. The plugin will verify the "
+"connection and refresh tokens automatically."
+msgstr ""
+
+#: classes/class-admin-help.php:126
+#, php-format
+msgid "Open the %s tab and select a WooCommerce order status."
+msgstr ""
+
+#: classes/class-admin-help.php:126 classes/class-admin-page.php:104
+msgid "Cards"
+msgstr ""
+
+#: classes/class-admin-help.php:127
+msgid ""
+"For that status, select the Trello board and list where cards should be "
+"created, configure the card fields, and enable card creation for the status."
+msgstr ""
+
+#: classes/class-admin-help.php:128
+msgid ""
+"Save the settings, then create or update a test order so it reaches the "
+"enabled status. Check the order notes and Trello list to confirm the card "
+"was created."
+msgstr ""
+
+#: classes/class-admin-help.php:131
+msgid "Important:"
+msgstr ""
+
+#: classes/class-admin-help.php:131
+msgid ""
+"Card settings are configured independently for each WooCommerce order "
+"status. Enabling cards for one status does not enable them for the other "
+"statuses."
+msgstr ""
+
+#: classes/class-admin-help.php:133
+msgid "If a card is not created"
+msgstr ""
+
+#: classes/class-admin-help.php:136
+msgid ""
+"Check that the status reached by the order is enabled in the Cards tab and "
+"has a board and list selected. If no complete board/list destination is "
+"selected, the Logs tab records that card creation was skipped."
+msgstr ""
+
+#: classes/class-admin-help.php:137
+msgid ""
+"Review the Status → Logs tab for the failed request. If authorization has "
+"expired or been revoked, reconnect the Trello account in the settings."
+msgstr ""
+
+#: classes/class-admin-help.php:138
+msgid ""
+"If the previous attempt failed, open the order and use Retry failed card "
+"creation after correcting the configuration."
+msgstr ""
+
+#: classes/class-admin-help.php:155
+msgid "The WooCommerce order ID number"
+msgstr ""
+
+#: classes/class-admin-help.php:156
+msgid "The current order status (e.g., pending, processing, completed)"
+msgstr ""
+
+#: classes/class-admin-help.php:157
+msgid "Customer's full name (first name + last name)"
+msgstr ""
+
+#: classes/class-admin-help.php:158
+msgid "Customer's first name"
+msgstr ""
+
+#: classes/class-admin-help.php:159
+msgid "Customer's last name"
+msgstr ""
+
+#: classes/class-admin-help.php:160
+msgid "Customer's company name"
+msgstr ""
+
+#: classes/class-admin-help.php:161
+msgid "Customer's email address"
+msgstr ""
+
+#: classes/class-admin-help.php:162
+msgid "The date and time the order was created"
+msgstr ""
+
+#: classes/class-admin-help.php:163
+msgid "The total order amount with currency symbol"
+msgstr ""
+
+#: classes/class-admin-help.php:168
+msgid "Using Placeholders in Card Names and Descriptions"
+msgstr ""
+
+#: classes/class-admin-help.php:170
+msgid ""
+"You can use dynamic placeholders in the Card Name and Card Description "
+"fields that will be automatically replaced with actual customer and order "
+"data. This allows you to create personalized Trello cards without having to "
+"manually enter information."
+msgstr ""
+
+#: classes/class-admin-help.php:172
+msgid "Available Placeholders"
+msgstr ""
+
+#: classes/class-admin-help.php:174
+msgid "The following placeholders are available for use:"
+msgstr ""
+
+#: classes/class-admin-help.php:179
+msgid "Placeholder"
+msgstr ""
+
+#: classes/class-admin-help.php:180 classes/class-core-fields.php:114
+msgid "Description"
+msgstr ""
+
+#: classes/class-admin-help.php:193
+msgid "Examples"
+msgstr ""
+
+#: classes/class-admin-help.php:195
+msgid "Here are some examples of how to use placeholders:"
+msgstr ""
+
+#: classes/class-admin-help.php:198 classes/class-admin-help.php:199
+msgid "Card Name:"
+msgstr ""
+
+#: classes/class-admin-help.php:200 classes/class-admin-help.php:201
+msgid "Card Description:"
+msgstr ""
+
+#: classes/class-admin-help.php:204
+msgid "Tips"
+msgstr ""
+
+#: classes/class-admin-help.php:207
+msgid ""
+"Placeholders are case-sensitive - always use uppercase placeholders like "
+"[ORDER_ID], not [order_id]"
+msgstr ""
+
+#: classes/class-admin-help.php:208
+msgid ""
+"If a field has no data (e.g., company name is empty), the placeholder will "
+"show as empty"
+msgstr ""
+
+#: classes/class-admin-help.php:209
+msgid "You can use multiple placeholders in a single field"
+msgstr ""
+
+#: classes/class-admin-help.php:210
+msgid "Placeholders work in both Card Name and Card Description fields"
+msgstr ""
+
+#: classes/class-admin-menu.php:47 classes/class-admin-menu.php:48
+msgid "Trello"
+msgstr ""
+
+#: classes/class-admin-page.php:69
+msgid "Trello OAuth 2.0"
+msgstr ""
+
+#: classes/class-admin-page.php:73
+msgid "System Info"
+msgstr ""
+
+#: classes/class-admin-page.php:105
+msgid "Settings"
+msgstr ""
+
+#: classes/class-admin-page.php:106
+msgid "Status"
+msgstr ""
+
+#: classes/class-admin-page.php:107 classes/class-core-fields.php:219
+msgid "Help"
+msgstr ""
+
+#: classes/class-admin-page.php:231 classes/class-admin-page.php:555
+msgid "No order statuses found."
+msgstr ""
+
+#: classes/class-admin-page.php:265
+#, php-format
+msgid "Create a Trello card for %s orders"
+msgstr ""
+
+#: classes/class-admin-page.php:452
+msgid "Board and List destinations"
+msgstr ""
+
+#: classes/class-admin-page.php:490
+msgid "Add New board/list"
+msgstr ""
+
+#: classes/class-admin-page.php:511
+msgid "Connect Trello to configure card settings"
+msgstr ""
+
+#: classes/class-admin-page.php:512
+msgid ""
+"Connect a Trello account before choosing boards and lists for your order "
+"statuses."
+msgstr ""
+
+#: classes/class-admin-page.php:513
+msgid "Open Trello settings"
+msgstr ""
+
+#: classes/class-admin-page.php
+msgid "Upgrade to LTW Order-to-Board Sync Pro to send cards for each order status to multiple Trello boards and lists, and to use custom order statuses registered by extensions or custom code."
+msgstr ""
+
+#: classes/class-admin-page.php:520
+msgid ""
+"These settings are applied per WooCommerce order status. Choose the Trello "
+"board and list for each status, then enable card creation only for the order "
+"statuses that should send cards to Trello."
+msgstr ""
+
+#: classes/class-admin-page.php:537
+#, php-format
+msgid ""
+"Settings for %s orders only. When this status is reached, the plugin can "
+"create a Trello card using the board and list configured below."
+msgstr ""
+
+#: classes/class-admin-page.php:649
+msgid "Getting started"
+msgstr ""
+
+#: classes/class-admin-page.php:652
+msgid "Connect your store to Trello"
+msgstr ""
+
+#: classes/class-admin-page.php:653
+msgid ""
+"You're almost ready to start creating Trello cards from WooCommerce orders."
+msgstr ""
+
+#: classes/class-admin-page.php:655
+msgid "Create a confidential OAuth 2.0 client in your Trello app settings."
+msgstr ""
+
+#: classes/class-admin-page.php:656
+msgid "Save the client ID and secret in the Trello OAuth 2.0 settings."
+msgstr ""
+
+#: classes/class-admin-page.php:657
+msgid "Connect your Trello account and approve the requested access."
+msgstr ""
+
+#: classes/class-admin-page.php:660
+msgid "Start setup"
+msgstr ""
+
+#: classes/class-admin-page.php:661
+msgid ""
+"OAuth tokens are used only to communicate with Trello and are never added to "
+"cards or logs."
+msgstr ""
+
+#: classes/class-admin-page.php:740 classes/class-admin-page.php:774
+#: classes/class-core-trello-api.php:854 classes/class-core-trello-api.php:922
+#: classes/class-core-trello-api.php:950
+msgid "Insufficient permissions."
+msgstr ""
+
+#: classes/class-admin-page.php:747
+msgid "Invalid log ID."
+msgstr ""
+
+#: classes/class-admin-page.php:755
+msgid "Log deleted successfully."
+msgstr ""
+
+#: classes/class-admin-page.php:781
+msgid "All logs deleted successfully."
+msgstr ""
+
+#: classes/class-admin-page.php:783
+msgid "Unable to delete all logs."
+msgstr ""
+
+#: classes/class-admin-page.php:797
+msgid "Delete All"
+msgstr ""
+
+#: classes/class-admin-settings-handler.php:50
+msgid "You do not have permission to save these settings."
+msgstr ""
+
+#: classes/class-admin-settings-handler.php:55
+msgid "Sorry, your nonce did not verify."
+msgstr ""
+
+#: classes/class-admin-settings-handler.php:72
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: classes/class-admin-ui-components.php:53 classes/class-core-fields.php:209
+#: classes/class-core-fields.php:250
+msgid "Save"
+msgstr ""
+
+#: classes/class-admin-ui-components.php:224
+msgid "Loading data.."
+msgstr ""
+
+#: classes/class-admin-ui-components.php:287
+#: classes/class-admin-ui-components.php:314
+msgid "Default - No color"
+msgstr ""
+
+#: classes/class-admin-ui-components.php:376
+msgid "Date"
+msgstr ""
+
+#: classes/class-admin-ui-components.php:429
+msgid "Time"
+msgstr ""
+
+#: classes/class-admin-ui-components.php:472
+msgid "Delete log"
+msgstr ""
+
+#: classes/class-core-fields.php:34
+msgid "Hour(s)"
+msgstr ""
+
+#: classes/class-core-fields.php:38
+msgid "Day(s)"
+msgstr ""
+
+#: classes/class-core-fields.php:42
+msgid "Week(s)"
+msgstr ""
+
+#: classes/class-core-fields.php:46
+msgid "Month(s)"
+msgstr ""
+
+#: classes/class-core-fields.php:66
+msgid "Enable"
+msgstr ""
+
+#: classes/class-core-fields.php:74 classes/class-wc-order-admin.php:333
+#: classes/class-wc-order-admin.php:334
+msgid "Board"
+msgstr ""
+
+#: classes/class-core-fields.php:85 classes/class-wc-order-admin.php:341
+#: classes/class-wc-order-admin.php:342
+msgid "List"
+msgstr ""
+
+#: classes/class-core-fields.php:96
+msgid "Name"
+msgstr ""
+
+#: classes/class-core-fields.php:104
+msgid "Color"
+msgstr ""
+
+#: classes/class-core-fields.php:122
+msgid "Due Date"
+msgstr ""
+
+#: classes/class-core-fields.php:132
+msgid "Position"
+msgstr ""
+
+#: classes/class-core-fields.php:136
+msgid "Top"
+msgstr ""
+
+#: classes/class-core-fields.php:140
+msgid "Bottom"
+msgstr ""
+
+#: classes/class-core-fields.php:151
+msgid "Include Order URL"
+msgstr ""
+
+#: classes/class-core-fields.php:152
+msgid "Enabling this will add URL to the order in the admin area to the card."
+msgstr ""
+
+#: classes/class-core-fields.php:161
+msgid "Include Billing Address"
+msgstr ""
+
+#: classes/class-core-fields.php:169
+msgid "Include Shipping Address"
+msgstr ""
+
+#: classes/class-core-fields.php:170
+msgid ""
+"Shipping address will be included only if it is different then billing "
+"address."
+msgstr ""
+
+#: classes/class-core-fields.php:178
+msgid "Include Shipping Method"
+msgstr ""
+
+#: classes/class-core-fields.php:187
+msgid "Include Product List"
+msgstr ""
+
+#: classes/class-core-fields.php:188
+msgid ""
+"Adds the ordered products, quantities, and line totals to the Trello card."
+msgstr ""
+
+#: classes/class-core-fields.php:196
+msgid "Include Total Costs"
+msgstr ""
+
+#: classes/class-core-fields.php:197
+msgid "Includes total costs with taxes and shipping."
+msgstr ""
+
+#: classes/class-core-fields.php:218
+#, php-format
+msgid ""
+"Create a Trello OAuth 2.0 client, then enter its client ID and secret below. "
+"Setup steps are available in the %s tab."
+msgstr ""
+
+#: classes/class-core-fields.php:227
+msgid "OAuth client ID"
+msgstr ""
+
+#: classes/class-core-fields.php:235
+msgid "OAuth client secret"
+msgstr ""
+
+#: classes/class-core-fields.php:236
+msgid ""
+"Leave blank to keep the saved secret. The secret is never displayed after "
+"saving."
+msgstr ""
+
+#: classes/class-core-fields.php:499
+msgid "One of the card switch elements has an invalid value."
+msgstr ""
+
+#: classes/class-core-fields.php:523
+msgid "Selected card color is not valid."
+msgstr ""
+
+#: classes/class-core-fields.php:545
+msgid "Selected card position is not valid."
+msgstr ""
+
+#: classes/class-core-fields.php:571
+msgid "Provided number is not a valid integer."
+msgstr ""
+
+#: classes/class-core-fields.php:605
+msgid "Invalid due date set."
+msgstr ""
+
+#: classes/class-core-helper.php:136
+#, php-format
+msgid ""
+"Created a card in board <strong>%s</strong>, list <strong>%s</strong> with "
+"status <strong>%s</strong>"
+msgstr ""
+
+#: classes/class-core-logger.php:267
+msgid "Log ID not found!"
+msgstr ""
+
+#: classes/class-core-settings.php:58
+msgid "No settings data provided."
+msgstr ""
+
+#: classes/class-core-trello-api.php:132
+msgid "No endpoint set for GET Trello API."
+msgstr ""
+
+#: classes/class-core-trello-api.php:180 classes/class-core-trello-api.php:273
+#: classes/class-core-trello-api.php:365
+msgid ""
+"Trello rejected the OAuth token after refresh. Reconnect your Trello account "
+"in the plugin settings."
+msgstr ""
+
+#: classes/class-core-trello-api.php:186
+#, php-format
+msgid "Trello API returned error %d: %s"
+msgstr ""
+
+#: classes/class-core-trello-api.php:195
+msgid "No body found on GET request."
+msgstr ""
+
+#: classes/class-core-trello-api.php:227
+msgid "No endpoint set for POST Trello API."
+msgstr ""
+
+#: classes/class-core-trello-api.php:280 classes/class-core-trello-api.php:372
+#, php-format
+msgid "Trello API error %d: %s"
+msgstr ""
+
+#: classes/class-core-trello-api.php:285 classes/class-core-trello-api.php:377
+msgid "No body returned from Trello API."
+msgstr ""
+
+#: classes/class-core-trello-api.php:314
+msgid "No endpoint set for PUT Trello API."
+msgstr ""
+
+#: classes/class-core-trello-api.php:423
+#, php-format
+msgid ""
+"Skipped Trello card creation for order %d because status %s is enabled but "
+"has no complete board and list destination selected."
+msgstr ""
+
+#: classes/class-core-trello-api.php:468
+#, php-format
+msgid ""
+"Skipped overlapping Trello card creation for order %d, status %s, "
+"destination %s/%s, event %s."
+msgstr ""
+
+#: classes/class-core-trello-api.php:487
+#, php-format
+msgid ""
+"Could not verify the saved Trello card for order %d, status %s, destination "
+"%s/%s, event %s: %s"
+msgstr ""
+
+#: classes/class-core-trello-api.php:504
+#, php-format
+msgid ""
+"Skipped Trello card creation for order %d because a card already exists for "
+"status %s and destination %s/%s (event %s)."
+msgstr ""
+
+#: classes/class-core-trello-api.php:574
+#, php-format
+msgid ""
+"Could not acquire the Trello card creation claim for order %d, status %s, "
+"destination %s/%s."
+msgstr ""
+
+#: classes/class-core-trello-api.php:614
+#, php-format
+msgid ""
+"Reclaimed a stale Trello card creation claim for order %d, status %s, "
+"destination %s/%s."
+msgstr ""
+
+#: classes/class-core-trello-api.php:627
+#, php-format
+msgid ""
+"Another request acquired the Trello card creation claim for order %d, status "
+"%s, destination %s/%s during stale-claim recovery."
+msgstr ""
+
+#: classes/class-core-trello-api.php:666
+#, php-format
+msgid ""
+"Could not release the Trello card creation claim for order %d, status %s, "
+"destination %s/%s."
+msgstr ""
+
+#: classes/class-core-trello-api.php:748 classes/class-core-trello-api.php:795
+#, php-format
+msgid "Order with the ID %d does not exist."
+msgstr ""
+
+#: classes/class-core-trello-api.php:782
+#, php-format
+msgid ""
+"Card was not created for order ID %d as there was no status change. Old "
+"status was %s and updated status is %s."
+msgstr ""
+
+#: classes/class-core-trello-api.php:865
+msgid "We found some boards!"
+msgstr ""
+
+#: classes/class-core-trello-api.php:878
+msgid "No board IDs provided"
+msgstr ""
+
+#: classes/class-core-trello-api.php:889
+msgid "No valid board IDs provided."
+msgstr ""
+
+#: classes/class-core-trello-api.php:933
+msgid "We found some lists!"
+msgstr ""
+
+#: classes/class-core-trello-api.php:958
+msgid "Invalid order ID."
+msgstr ""
+
+#: classes/class-core-trello-api.php:962
+msgid "Board ID and List ID are required."
+msgstr ""
+
+#: classes/class-core-trello-api.php:968
+#, php-format
+msgid "Order with ID %d not found."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1006
+msgid ""
+"Card creation for this order status and destination is already in progress. "
+"Please try again shortly."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1011
+msgid "Failed to create card. Check logs for details."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1022
+#, php-format
+msgid ""
+"Could not verify the saved Trello card for order %d, status %s, destination "
+"%s/%s: %s"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1032
+msgid ""
+"Could not verify whether a Trello card already exists. Please try again "
+"later."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1034
+msgid "A Trello card already exists for this order status and destination."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1048
+msgid "Card created successfully."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1103
+#, php-format
+msgid "Could not reload order %d while checking for an existing Trello card."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1161
+msgid "Trello returned an unexpected response while checking a saved card."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1276
+msgid "Failed getting single board info."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1299
+msgid "Failed getting single list info."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1356
+msgid ""
+"Cannot post to Trello if $order has no order data in \"create_new_card "
+"method\"."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1362
+msgid "Board and list are required before creating a Trello card."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1371
+#, php-format
+msgid ""
+"Board ID <strong>%s</strong> is not in a valid format. Please check the "
+"selected board for order status <strong>%s</strong>."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1391
+#, php-format
+msgid ""
+"List ID <strong>%s</strong> is not in a valid format. Please check the "
+"selected list for order status <strong>%s</strong>."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1406
+#, php-format
+msgid "Order #%d"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1420
+msgid "Order"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1426
+msgid "Billing address"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1435
+msgid "Shipping address"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1444
+msgid "Shipping method and costs"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1452
+msgid "Products"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1477
+msgid "Total costs"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1484
+msgid "Card description sections must be returned as an array."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1491
+msgid "Card description sections must have string IDs and string content."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1503
+#, php-format
+msgid ""
+"Due date format is invalid for order status <strong>%s</strong>. Please try "
+"resaving the Cards page."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1542
+msgid "No card ID found."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1593
+msgid "Updated order meta history"
+msgstr ""
+
+#: classes/class-core-trello-api.php:1596
+msgid "Succesfully created card."
+msgstr ""
+
+#: classes/class-core-trello-api.php:1631
+#: classes/class-core-trello-api.php:1665
+msgid "Succesfully updated card."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:120
+msgid "Connect a Trello account in the plugin settings."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:128
+msgid ""
+"The Trello authorization has expired. Reconnect your Trello account in the "
+"plugin settings."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:162
+msgid "Reconnect Trello account"
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:162
+msgid "Connect Trello account"
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:165
+msgid "OAuth callback URL"
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:166
+msgid ""
+"Register this exact URL in the callback URLs for your Trello OAuth 2.0 "
+"client."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:169
+msgid "Trello account connected."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:176
+msgid "Disconnect Trello account"
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:178
+msgid "Trello account not connected."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:184
+msgid "Enter and save the OAuth client ID and secret above before connecting."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:199
+msgid "You do not have permission to connect a Trello account."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:208
+msgid "Save your Trello OAuth client ID and client secret before connecting."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:216
+msgid "Unable to generate secure Trello OAuth state."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:218
+msgid "Unable to start secure Trello authorization. Please try again."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:236
+msgid "Unable to securely start Trello authorization. Please try again."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:267
+msgid "You do not have permission to complete Trello authorization."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:281
+msgid ""
+"Trello authorization could not be verified. Start the connection process "
+"again."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:287
+msgid "Trello OAuth callback returned an authorization error."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:289
+#, php-format
+msgid "Trello authorization was not completed: %s"
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:295
+msgid ""
+"Trello did not return a valid authorization code. Start the connection "
+"process again."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:306
+msgid "Trello OAuth authorization-code exchange failed."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:315
+msgid "Trello OAuth access-token validation failed."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:335
+#, php-format
+msgid ""
+"Trello rejected the authorization or returned an invalid account response "
+"(HTTP %d)."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:339
+msgid "Trello OAuth connection validation failed."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:346
+msgid "Trello OAuth account connected successfully."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:360
+msgid "You do not have permission to disconnect a Trello account."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:369
+msgid "Trello OAuth account disconnected."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:391
+msgid "Trello OAuth access-token refresh failed."
+msgstr ""
+
+#: classes/class-core-trello-oauth.php:445
+#, php-format
+msgid ""
+"Trello OAuth token request failed (HTTP %d). Check the OAuth client "
+"configuration and try again."
+msgstr ""
+
+#: classes/class-status-system-info.php:51
+msgid "Server Environment"
+msgstr ""
+
+#: classes/class-status-system-info.php:55
+#: classes/class-status-system-info.php:91
+msgid "Setting"
+msgstr ""
+
+#: classes/class-status-system-info.php:55
+#: classes/class-status-system-info.php:91
+msgid "Value"
+msgstr ""
+
+#: classes/class-status-system-info.php:59
+msgid "Server architecture"
+msgstr ""
+
+#: classes/class-status-system-info.php:60
+msgid "Web server"
+msgstr ""
+
+#: classes/class-status-system-info.php:61
+msgid "PHP version"
+msgstr ""
+
+#: classes/class-status-system-info.php:62
+msgid "PHP SAPI"
+msgstr ""
+
+#: classes/class-status-system-info.php:63
+msgid "PHP memory limit"
+msgstr ""
+
+#: classes/class-status-system-info.php:64
+msgid "PHP max execution time"
+msgstr ""
+
+#: classes/class-status-system-info.php:65
+msgid "PHP max input vars"
+msgstr ""
+
+#: classes/class-status-system-info.php:66
+msgid "Upload max filesize"
+msgstr ""
+
+#: classes/class-status-system-info.php:67
+msgid "Post max size"
+msgstr ""
+
+#: classes/class-status-system-info.php:68
+msgid "MySQL / MariaDB version"
+msgstr ""
+
+#: classes/class-status-system-info.php:69
+msgid "Database charset"
+msgstr ""
+
+#: classes/class-status-system-info.php:70
+msgid "Database collation"
+msgstr ""
+
+#: classes/class-status-system-info.php:87
+msgid "WordPress Environment"
+msgstr ""
+
+#: classes/class-status-system-info.php:95
+msgid "WordPress version"
+msgstr ""
+
+#: classes/class-status-system-info.php:96
+msgid "Site URL"
+msgstr ""
+
+#: classes/class-status-system-info.php:97
+msgid "Home URL"
+msgstr ""
+
+#: classes/class-status-system-info.php:98
+msgid "Is multisite"
+msgstr ""
+
+#: classes/class-status-system-info.php:99
+msgid "Site language"
+msgstr ""
+
+#: classes/class-status-system-info.php:100
+msgid "Timezone"
+msgstr ""
+
+#: classes/class-status-system-info.php:101
+msgid "Permalink structure"
+msgstr ""
+
+#: classes/class-status-system-info.php:102
+msgid "WP memory limit"
+msgstr ""
+
+#: classes/class-status-system-info.php:103
+msgid "WP debug mode"
+msgstr ""
+
+#: classes/class-status-system-info.php:104
+msgid "Active theme"
+msgstr ""
+
+#: classes/class-status-system-info.php:105
+msgid "Active Plugins"
+msgstr ""
+
+#: classes/class-status-system-info.php:106
+msgid "Search engine visibility"
+msgstr ""
+
+#: classes/class-status-system-info.php:125
+msgid "lessthanweb Woocommerce Trello Status Report"
+msgstr ""
+
+#: classes/class-status-system-info.php:127
+msgid "--- Server Environment ---"
+msgstr ""
+
+#: classes/class-status-system-info.php:128
+msgid "Server architecture: "
+msgstr ""
+
+#: classes/class-status-system-info.php:129
+msgid "Web server: "
+msgstr ""
+
+#: classes/class-status-system-info.php:130
+msgid "PHP version: "
+msgstr ""
+
+#: classes/class-status-system-info.php:131
+msgid "PHP SAPI: "
+msgstr ""
+
+#: classes/class-status-system-info.php:132
+msgid "PHP memory limit: "
+msgstr ""
+
+#: classes/class-status-system-info.php:133
+msgid "PHP max execution time: "
+msgstr ""
+
+#: classes/class-status-system-info.php:134
+msgid "PHP max input vars: "
+msgstr ""
+
+#: classes/class-status-system-info.php:135
+msgid "Upload max filesize: "
+msgstr ""
+
+#: classes/class-status-system-info.php:136
+msgid "Post max size: "
+msgstr ""
+
+#: classes/class-status-system-info.php:137
+msgid "MySQL / MariaDB version: "
+msgstr ""
+
+#: classes/class-status-system-info.php:138
+msgid "Database charset: "
+msgstr ""
+
+#: classes/class-status-system-info.php:139
+msgid "Database collation: "
+msgstr ""
+
+#: classes/class-status-system-info.php:141
+msgid "--- WordPress Environment ---"
+msgstr ""
+
+#: classes/class-status-system-info.php:142
+msgid "WordPress version: "
+msgstr ""
+
+#: classes/class-status-system-info.php:143
+msgid "Site URL: "
+msgstr ""
+
+#: classes/class-status-system-info.php:144
+msgid "Home URL: "
+msgstr ""
+
+#: classes/class-status-system-info.php:145
+msgid "Is multisite: "
+msgstr ""
+
+#: classes/class-status-system-info.php:146
+msgid "Site language: "
+msgstr ""
+
+#: classes/class-status-system-info.php:147
+msgid "Timezone: "
+msgstr ""
+
+#: classes/class-status-system-info.php:148
+msgid "Permalink structure: "
+msgstr ""
+
+#: classes/class-status-system-info.php:149
+msgid "WP memory limit: "
+msgstr ""
+
+#: classes/class-status-system-info.php:150
+msgid "WP debug mode: "
+msgstr ""
+
+#: classes/class-status-system-info.php:151
+msgid "Active theme: "
+msgstr ""
+
+#: classes/class-status-system-info.php:152
+msgid "Active plugins: "
+msgstr ""
+
+#: classes/class-status-system-info.php:154
+msgid "Search engine visibility: "
+msgstr ""
+
+#: classes/class-status-system-info.php:156
+msgid "=== End of Report ==="
+msgstr ""
+
+#: classes/class-status-system-info.php:193
+msgid "Unable to determine"
+msgstr ""
+
+#: classes/class-status-system-info.php:239
+msgid " seconds"
+msgstr ""
+
+#: classes/class-status-system-info.php:286
+msgid "N/A (wpdb not available)"
+msgstr ""
+
+#: classes/class-status-system-info.php:302
+#: classes/class-status-system-info.php:305
+#: classes/class-status-system-info.php:409
+#: classes/class-status-system-info.php:462
+msgid "Unknown"
+msgstr ""
+
+#: classes/class-status-system-info.php:318
+#: classes/class-status-system-info.php:331
+#: classes/class-status-system-info.php:487
+msgid "N/A"
+msgstr ""
+
+#: classes/class-status-system-info.php:379
+msgid "Yes"
+msgstr ""
+
+#: classes/class-status-system-info.php:379
+msgid "No"
+msgstr ""
+
+#: classes/class-status-system-info.php:422
+msgid "Plain"
+msgstr ""
+
+#: classes/class-status-system-info.php:437
+msgid "Not defined (using PHP default)"
+msgstr ""
+
+#: classes/class-status-system-info.php:448
+msgid "Enabled"
+msgstr ""
+
+#: classes/class-status-system-info.php:448
+msgid "Disabled"
+msgstr ""
+
+#: classes/class-status-system-info.php:472
+#, php-format
+msgid " — Child of %s"
+msgstr ""
+
+#: classes/class-status-system-info.php:513
+msgid "Visible"
+msgstr ""
+
+#: classes/class-status-system-info.php:513
+msgid "Discouraged"
+msgstr ""
+
+#: classes/class-status-system-info.php:592
+msgid "None"
+msgstr ""
+
+#: classes/class-status-system-info.php:596
+msgid "Total: "
+msgstr ""
+
+#: classes/class-status-system-info.php:603
+msgid "[Network]"
+msgstr ""
+
+#: classes/class-status-system-info.php:632
+msgid "  None"
+msgstr ""
+
+#: classes/class-status-system-info.php:714
+msgid "Copy status report"
+msgstr ""
+
+#: classes/class-wc-order-admin.php:110 classes/class-wc-order-admin.php:263
+msgid "Trello Cards"
+msgstr ""
+
+#: classes/class-wc-order-admin.php:157 classes/class-wc-order-admin.php:193
+#: classes/class-wc-order-admin.php:237
+msgid "No cards created"
+msgstr ""
+
+#: classes/class-wc-order-admin.php:161 classes/class-wc-order-admin.php:197
+#: classes/class-wc-order-admin.php:241
+#, php-format
+msgid "%d cards created"
+msgstr ""
+
+#: classes/class-wc-order-admin.php:301
+msgid "Currently there are no cards created for this order."
+msgstr ""
+
+#: classes/class-wc-order-admin.php:303
+msgid "Card creation history for this order:"
+msgstr ""
+
+#: classes/class-wc-order-admin.php:316
+msgid "Create a card manually for this order."
+msgstr ""
+
+#: classes/class-wc-order-admin.php:335
+msgid "Loading boards..."
+msgstr ""
+
+#: classes/class-wc-order-admin.php:343
+msgid "Select a board to load its lists"
+msgstr ""
+
+#: classes/class-wc-order-admin.php:360
+msgid "Create card"
+msgstr ""
+
+#: classes/class-wc-order-admin.php:361
+msgid "Retry failed card"
+msgstr ""
+
+#: classes/class-wc-order-admin.php:402
+#, php-format
+msgid "Order #%d custom field updated: %s"
+msgstr ""
+
+#: classes/class-wc-order-info.php:101 classes/class-wc-order-info.php:162
+msgid "First name:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:105 classes/class-wc-order-info.php:166
+msgid "Last name:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:109 classes/class-wc-order-info.php:170
+msgid "Company:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:113 classes/class-wc-order-info.php:174
+msgid "Address:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:117 classes/class-wc-order-info.php:178
+msgid "City:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:121 classes/class-wc-order-info.php:182
+msgid "State:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:125 classes/class-wc-order-info.php:186
+msgid "Post code:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:129 classes/class-wc-order-info.php:190
+msgid "Country:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:290
+#, php-format
+msgid "%s → %s (cost: %s, tax: %s) %s%s%s"
+msgstr ""
+
+#: classes/class-wc-order-info.php:305
+msgid "Total shipping:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:306
+msgid "Total tax:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:307 classes/class-wc-order-info.php:332
+msgid "Total:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:328
+msgid "Subtotal:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:329
+msgid "Discount:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:330
+msgid "Shipping:"
+msgstr ""
+
+#: classes/class-wc-order-info.php:331
+msgid "Tax:"
+msgstr ""
+
+#: ltw-order-to-board-sync.php:207
+msgid ""
+"LTW Order-to-Board Sync requires WooCommerce to be installed and active."
+msgstr ""
