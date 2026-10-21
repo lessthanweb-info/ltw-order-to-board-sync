@@ -55,7 +55,7 @@ define( 'LTW_ORDER_TO_BOARD_SYNC_API_VERSION', '1.2.0' );
  * @since	1.0.0
  *
  */
-define( 'LTW_ORDER_TO_BOARD_SYNC_DEBUG', true );
+define( 'LTW_ORDER_TO_BOARD_SYNC_DEBUG', false );
 
 /**
  * Option name for storing the plugin settings.
