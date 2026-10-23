@@ -308,6 +308,7 @@ class Page {
 				'options' => $field['options'],
 				'selected' => $field_value,
 				'label' => $field['label'],
+				'note' => $field['note'] ?? '',
 				'classes' => $field['classes'],
 				'loader' => $field['loader'] ?? '',
 			] );
@@ -452,27 +453,64 @@ class Page {
 		$content .= '<legend><strong>' . esc_html__( 'Board and List destinations', 'ltw-order-to-board-sync' ) . '</strong></legend><div class="ltw-order-to-board-sync-board-list-rows">';
 
 		foreach ( array_values( $values ) as $index => $value ) {
-			$row_fields = [];
-			
-			foreach ( $row['fields'] as $field_name ) {
-				if ( ! isset( $field_config[ $field_name ] ) ) {
+			$row_content = '';
+			$row_groups = $row['groups'] ?? [
+				[
+					'fields' => $row['fields'] ?? [],
+				],
+			];
+
+			foreach ( $row_groups as $group ) {
+				if ( ! is_array( $group ) || empty( $group['fields'] ) || ! is_array( $group['fields'] ) ) {
 					continue;
 				}
 
-				$row_fields[] = $this->render_field(
-					$field_config[ $field_name ],
-					$field_name,
-					$section_name,
-					$context_key,
-					[
-						'section' => '[' . $section_name . '][' . $context_key . '][board_lists][' . $index . ']',
-						'id' => $context_key . '-board-list-' . $index . '-' . $field_config[ $field_name ]['html_id'],
-						'value' => $value[ $field_name ] ?? '',
-					]
-				);
+				$row_fields = [];
+
+				foreach ( $group['fields'] as $field_name ) {
+					if ( ! isset( $field_config[ $field_name ] ) ) {
+						continue;
+					}
+
+					// Render each group independently to let extensions organize repeatable fields into readable rows.
+					$row_fields[] = $this->render_field(
+						$field_config[ $field_name ],
+						$field_name,
+						$section_name,
+						$context_key,
+						[
+							'section' => '[' . $section_name . '][' . $context_key . '][board_lists][' . $index . ']',
+							'id' => $context_key . '-board-list-' . $index . '-' . $field_config[ $field_name ]['html_id'],
+							'value' => $value[ $field_name ] ?? '',
+						]
+					);
+				}
+
+				if ( empty( $row_fields ) ) {
+					continue;
+				}
+
+				$group_content = $this->ui_components->row( [ 'fields' => $row_fields ] );
+				$group_label = is_scalar( $group['label'] ?? '' ) ? sanitize_text_field( (string) ( $group['label'] ?? '' ) ) : '';
+				$group_description = is_scalar( $group['description'] ?? '' ) ? sanitize_text_field( (string) ( $group['description'] ?? '' ) ) : '';
+				$full_width_class = ! empty( $group['full_width'] ) ? ' ltw-order-to-board-sync-destination-group-full-width' : '';
+
+				if ( $group_label !== '' ) {
+					$row_content .= '<fieldset class="ltw-order-to-board-sync-destination-group"><legend><strong>' . esc_html( $group_label ) . '</strong></legend>';
+
+					if ( $group_description !== '' ) {
+						$row_content .= '<p class="ltw-order-to-board-sync-destination-group-description">' . esc_html( $group_description ) . '</p>';
+					}
+
+					$row_content .= $group_content . '</fieldset>';
+				} elseif ( $full_width_class !== '' ) {
+					$row_content .= '<div class="ltw-order-to-board-sync-destination-group' . esc_attr( $full_width_class ) . '">' . $group_content . '</div>';
+				} else {
+					$row_content .= $group_content;
+				}
 			}
 
-			$row_html = '<div class="ltw-order-to-board-sync-board-list-row" data-index="' . esc_attr( (string) $index ) . '">' . $this->ui_components->row( [ 'fields' => $row_fields ] ) . '</div>';
+			$row_html = '<div class="ltw-order-to-board-sync-board-list-row" data-index="' . esc_attr( (string) $index ) . '">' . $row_content . '</div>';
 			
 			$content .= apply_filters(
 				Hooks::FILTER_REPEATABLE_ROW_HTML,
@@ -487,7 +525,12 @@ class Page {
 			);
 		}
 
-		return $content . '</div><button type="button" class="button ltw-order-to-board-sync-add-board-list">' . esc_html__( 'Add New board/list', 'ltw-order-to-board-sync' ) . '</button></fieldset>';
+		$add_destination_label = is_scalar( $row['add_button_label'] ?? '' )
+			? sanitize_text_field( (string) ( $row['add_button_label'] ?? '' ) )
+			: '';
+		$add_destination_label = $add_destination_label !== '' ? $add_destination_label : esc_html__( 'Add New board/list', 'ltw-order-to-board-sync' );
+
+		return $content . '</div><button type="button" class="button ltw-order-to-board-sync-add-board-list">' . esc_html( $add_destination_label ) . '</button></fieldset>';
 	}
 
 	/**

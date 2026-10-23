@@ -11,7 +11,7 @@
  * Plugin Name:       LTW Order-to-Board Sync for WooCommerce and Trello
  * Plugin URI:        https://www.lessthanweb.com/order-to-board-sync-plugin
  * Description:       Automatically create Trello cards from WooCommerce orders with configurable, per-status card details.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Requires at least: 6.8
  * Requires PHP:      8.3
  * Requires Plugins:  woocommerce
@@ -39,15 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since	1.0.0
  *
  */
-define( 'LTW_ORDER_TO_BOARD_SYNC_VERSION', '1.0.0' );
-
-/**
- * Extension API version
- *
- * @since	1.0.0
- *
- */
-define( 'LTW_ORDER_TO_BOARD_SYNC_API_VERSION', '1.2.0' );
+define( 'LTW_ORDER_TO_BOARD_SYNC_VERSION', '1.1.0' );
 
 /**
  * Production or dev mode?

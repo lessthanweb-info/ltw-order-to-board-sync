@@ -247,6 +247,29 @@ class Hooks {
 	const FILTER_TRELLO_CARD_DATA = 'ltw_order_to_board_sync_card_data';
 
 	/**
+	 * Filter Board/List destinations after core field validation so extensions can retain destination-specific settings.
+	 *
+	 * @param	array	$destinations	Validated Board/List destination rows.
+	 * @param	array	$submitted_destinations	Submitted Board/List rows.
+	 * @param	string	$section	Settings section.
+	 * @param	string	$context	Settings context, such as an order status.
+	 * @return	array
+	 * @since	1.0.0
+	 */
+	const FILTER_BOARD_LIST_DESTINATIONS = 'ltw_order_to_board_sync_board_list_destinations';
+
+	/**
+	 * Filter the destinations used to create cards for an order.
+	 *
+	 * @param	array	$destinations	Configured Board/List destinations.
+	 * @param	object	$order	WooCommerce order.
+	 * @param	array	$card_settings	Settings for the order status.
+	 * @return	array
+	 * @since	1.0.0
+	 */
+	const FILTER_CARD_DESTINATIONS = 'ltw_order_to_board_sync_card_destinations';
+
+	/**
 	 * Filter the rendered note for an order's Trello card-history entry.
 	 *
 	 * @param	string	$note_text	Rendered note HTML before KSES sanitization.

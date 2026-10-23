@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LTW Order-to-Board Sync\n"
-"POT-Creation-Date: 2026-10-17 09:49+0200\n"
-"PO-Revision-Date: 2026-10-17 09:50+0200\n"
+"POT-Creation-Date: 2026-10-23 14:24+0200\n"
+"PO-Revision-Date: 2026-10-23 14:24+0200\n"
 "Last-Translator: \n"
 "Language-Team: lessthanweb\n"
 "Language: sl_SI\n"
@@ -19,13 +19,15 @@ msgstr ""
 msgid "Logs"
 msgstr "Dnevniki"
 
-#: classes/class-admin-assets.php:70 classes/class-admin-page.php:684
+#: classes/class-admin-assets.php:70 classes/class-admin-page.php:739
 msgid "Currently there are no logs available."
 msgstr "Trenutno ni na voljo nobenih dnevnikov."
 
 #: classes/class-admin-assets.php:71
 msgid "Are you sure you want to delete all logs? This action cannot be undone."
-msgstr "Ali ste prepričani, da želite izbrisati vse dnevnike? Tega dejanja ni mogoče razveljaviti."
+msgstr ""
+"Ali ste prepričani, da želite izbrisati vse dnevnike? Tega dejanja ni mogoče "
+"razveljaviti."
 
 #: classes/class-admin-assets.php:72
 msgid "Error:"
@@ -81,8 +83,9 @@ msgid ""
 "Add the exact OAuth callback URL shown in the plugin settings and enable the "
 "read:member:trello, read:board:trello, and write:board:trello scopes."
 msgstr ""
-"Dodajte natančen URL povratnega klica OAuth, prikazan v nastavitvah vtičnika, "
-"in omogočite obsege read:member:trello, read:board:trello in write:board:trello."
+"Dodajte natančen URL povratnega klica OAuth, prikazan v nastavitvah "
+"vtičnika, in omogočite obsege read:member:trello, read:board:trello in "
+"write:board:trello."
 
 #: classes/class-admin-help.php:118
 msgid ""
@@ -97,13 +100,15 @@ msgid ""
 "Keep the OAuth client secret private. The plugin requests offline access so "
 "it can refresh its short-lived access token automatically."
 msgstr ""
-"Skrivnost odjemalca OAuth hranite zasebno. Vtičnik zahteva dostop brez povezave, "
-"da lahko samodejno osveži svoj kratkotrajni dostopni žeton."
+"Skrivnost odjemalca OAuth hranite zasebno. Vtičnik zahteva dostop brez "
+"povezave, da lahko samodejno osveži svoj kratkotrajni dostopni žeton."
 
 #: classes/class-admin-help.php:124
 #, php-format
 msgid "Open the %s tab and enter your OAuth client ID and client secret."
-msgstr "Odprite zavihek %s in vnesite svoj OAuth ID odjemalca ter skrivnost odjemalca."
+msgstr ""
+"Odprite zavihek %s in vnesite svoj OAuth ID odjemalca ter skrivnost "
+"odjemalca."
 
 #: classes/class-admin-help.php:124
 msgid "Settings → Trello OAuth 2.0"
@@ -131,8 +136,9 @@ msgid ""
 "For that status, select the Trello board and list where cards should be "
 "created, configure the card fields, and enable card creation for the status."
 msgstr ""
-"Za ta status izberite ploščo in seznam Trello, kjer naj se kartice ustvarijo, "
-"konfigurirajte polja kartice in omogočite ustvarjanje kartic za ta status."
+"Za ta status izberite ploščo in seznam Trello, kjer naj se kartice "
+"ustvarijo, konfigurirajte polja kartice in omogočite ustvarjanje kartic za "
+"ta status."
 
 #: classes/class-admin-help.php:128
 msgid ""
@@ -168,8 +174,8 @@ msgid ""
 "selected, the Logs tab records that card creation was skipped."
 msgstr ""
 "Preverite, da je status, ki ga je naročilo doseglo, omogočen v zavihku "
-"Kartice in da sta izbrana plošča ter seznam. Če ni izbran popoln cilj "
-"plošče/seznama, zavihek Dnevniki zabeleži, da je bilo ustvarjanje kartice "
+"Kartice in da sta izbrana plošča ter seznam. Če ni izbran popoln cilj plošče/"
+"seznama, zavihek Dnevniki zabeleži, da je bilo ustvarjanje kartice "
 "preskočeno."
 
 #: classes/class-admin-help.php:137
@@ -236,9 +242,9 @@ msgid ""
 "manually enter information."
 msgstr ""
 "V poljih Ime kartice in Opis kartice lahko uporabite dinamične oznake, ki "
-"bodo samodejno zamenjane z dejanskimi podatki o stranki in naročilu. To "
-"vam omogoča ustvarjanje prilagojenih kartic Trello, ne da bi morali "
-"ročno vnašati informacije."
+"bodo samodejno zamenjane z dejanskimi podatki o stranki in naročilu. To vam "
+"omogoča ustvarjanje prilagojenih kartic Trello, ne da bi morali ročno "
+"vnašati informacije."
 
 #: classes/class-admin-help.php:172
 msgid "Available Placeholders"
@@ -324,7 +330,7 @@ msgstr "Status"
 msgid "Help"
 msgstr "Pomoč"
 
-#: classes/class-admin-page.php:231 classes/class-admin-page.php:555
+#: classes/class-admin-page.php:231 classes/class-admin-page.php:610
 msgid "No order statuses found."
 msgstr "Ni bilo najdenih statusov naročil."
 
@@ -333,34 +339,30 @@ msgstr "Ni bilo najdenih statusov naročil."
 msgid "Create a Trello card for %s orders"
 msgstr "Ustvari kartico Trello za naročila s statusom %s"
 
-#: classes/class-admin-page.php:452
+#: classes/class-admin-page.php:453
 msgid "Board and List destinations"
 msgstr "Cilji plošče in seznama"
 
-#: classes/class-admin-page.php:490
+#: classes/class-admin-page.php:531
 msgid "Add New board/list"
 msgstr "Dodaj novo ploščo/seznam"
 
-#: classes/class-admin-page.php:511
+#: classes/class-admin-page.php:554
 msgid "Connect Trello to configure card settings"
 msgstr "Povežite Trello za konfiguracijo nastavitev kartic"
 
-#: classes/class-admin-page.php:512
+#: classes/class-admin-page.php:555
 msgid ""
 "Connect a Trello account before choosing boards and lists for your order "
 "statuses."
 msgstr ""
 "Pred izbiro plošč in seznamov za statuse naročil povežite račun Trello."
 
-#: classes/class-admin-page.php:513
+#: classes/class-admin-page.php:556
 msgid "Open Trello settings"
 msgstr "Odpri nastavitve Trello"
 
-#: classes/class-admin-page.php
-msgid "Upgrade to LTW Order-to-Board Sync Pro to send cards for each order status to multiple Trello boards and lists, and to use custom order statuses registered by extensions or custom code."
-msgstr "Preklopite na LTW Order-to-Board Sync Pro za pošiljanje kartic za vsak status naročila na več plošč in seznamov Trello ter za uporabo statusov naročil po meri, ki jih registrirajo razširitve ali koda po meri."
-
-#: classes/class-admin-page.php:520
+#: classes/class-admin-page.php:563
 msgid ""
 "These settings are applied per WooCommerce order status. Choose the Trello "
 "board and list for each status, then enable card creation only for the order "
@@ -370,7 +372,27 @@ msgstr ""
 "status izberite ploščo in seznam Trello, nato omogočite ustvarjanje kartic "
 "le za tiste statuse naročil, ki naj pošiljajo kartice v Trello."
 
-#: classes/class-admin-page.php:537
+#: classes/class-admin-page.php:573
+#, fuzzy
+#| msgid "Board and List destinations"
+msgid "Need more destinations?"
+msgstr "Cilji plošče in seznama"
+
+#: classes/class-admin-page.php:574
+msgid ""
+"Upgrade to LTW Order-to-Board Sync Pro to send cards for each order status "
+"to multiple Trello boards and lists, and to use custom order statuses "
+"registered by extensions or custom code."
+msgstr ""
+"Preklopite na LTW Order-to-Board Sync Pro za pošiljanje kartic za vsak "
+"status naročila na več plošč in seznamov Trello ter za uporabo statusov "
+"naročil po meri, ki jih registrirajo razširitve ali koda po meri."
+
+#: classes/class-admin-page.php:576
+msgid "Explore Pro"
+msgstr "Raziščite Pro"
+
+#: classes/class-admin-page.php:592
 #, php-format
 msgid ""
 "Settings for %s orders only. When this status is reached, the plugin can "
@@ -380,38 +402,39 @@ msgstr ""
 "vtičnik ustvari kartico Trello z uporabo spodaj konfigurirane plošče in "
 "seznama."
 
-#: classes/class-admin-page.php:649
+#: classes/class-admin-page.php:704
 msgid "Getting started"
 msgstr "Začetek"
 
-#: classes/class-admin-page.php:652
+#: classes/class-admin-page.php:707
 msgid "Connect your store to Trello"
 msgstr "Povežite svojo trgovino s Trello"
 
-#: classes/class-admin-page.php:653
+#: classes/class-admin-page.php:708
 msgid ""
 "You're almost ready to start creating Trello cards from WooCommerce orders."
 msgstr ""
 "Skoraj ste pripravljeni začeti ustvarjati kartice Trello iz naročil "
 "WooCommerce."
 
-#: classes/class-admin-page.php:655
+#: classes/class-admin-page.php:710
 msgid "Create a confidential OAuth 2.0 client in your Trello app settings."
-msgstr "V nastavitvah aplikacije Trello ustvarite zaupnega odjemalca OAuth 2.0."
+msgstr ""
+"V nastavitvah aplikacije Trello ustvarite zaupnega odjemalca OAuth 2.0."
 
-#: classes/class-admin-page.php:656
+#: classes/class-admin-page.php:711
 msgid "Save the client ID and secret in the Trello OAuth 2.0 settings."
 msgstr "Shranite ID odjemalca in skrivnost v nastavitvah Trello OAuth 2.0."
 
-#: classes/class-admin-page.php:657
+#: classes/class-admin-page.php:712
 msgid "Connect your Trello account and approve the requested access."
 msgstr "Povežite svoj račun Trello in odobrite zahtevani dostop."
 
-#: classes/class-admin-page.php:660
+#: classes/class-admin-page.php:715
 msgid "Start setup"
 msgstr "Začni nastavitev"
 
-#: classes/class-admin-page.php:661
+#: classes/class-admin-page.php:716
 msgid ""
 "OAuth tokens are used only to communicate with Trello and are never added to "
 "cards or logs."
@@ -419,29 +442,29 @@ msgstr ""
 "Žetoni OAuth se uporabljajo le za komunikacijo s Trello in se nikoli ne "
 "dodajo na kartice ali v dnevnike."
 
-#: classes/class-admin-page.php:740 classes/class-admin-page.php:774
-#: classes/class-core-trello-api.php:854 classes/class-core-trello-api.php:922
-#: classes/class-core-trello-api.php:950
+#: classes/class-admin-page.php:795 classes/class-admin-page.php:829
+#: classes/class-core-trello-api.php:917 classes/class-core-trello-api.php:985
+#: classes/class-core-trello-api.php:1013
 msgid "Insufficient permissions."
 msgstr "Nezadostna dovoljenja."
 
-#: classes/class-admin-page.php:747
+#: classes/class-admin-page.php:802
 msgid "Invalid log ID."
 msgstr "Neveljaven ID dnevnika."
 
-#: classes/class-admin-page.php:755
+#: classes/class-admin-page.php:810
 msgid "Log deleted successfully."
 msgstr "Dnevnik uspešno izbrisan."
 
-#: classes/class-admin-page.php:781
+#: classes/class-admin-page.php:836
 msgid "All logs deleted successfully."
 msgstr "Vsi dnevniki uspešno izbrisani."
 
-#: classes/class-admin-page.php:783
+#: classes/class-admin-page.php:838
 msgid "Unable to delete all logs."
 msgstr "Ni mogoče izbrisati vseh dnevnikov."
 
-#: classes/class-admin-page.php:797
+#: classes/class-admin-page.php:852
 msgid "Delete All"
 msgstr "Izbriši vse"
 
@@ -557,8 +580,7 @@ msgstr "Vključi naslov za dostavo"
 msgid ""
 "Shipping address will be included only if it is different then billing "
 "address."
-msgstr ""
-"Naslov za dostavo bo vključen le, če se razlikuje od naslova za račun."
+msgstr "Naslov za dostavo bo vključen le, če se razlikuje od naslova za račun."
 
 #: classes/class-core-fields.php:178
 msgid "Include Shipping Method"
@@ -571,8 +593,7 @@ msgstr "Vključi seznam izdelkov"
 #: classes/class-core-fields.php:188
 msgid ""
 "Adds the ordered products, quantities, and line totals to the Trello card."
-msgstr ""
-"Na kartico Trello doda naročene izdelke, količine in seštevke vrstic."
+msgstr "Na kartico Trello doda naročene izdelke, količine in seštevke vrstic."
 
 #: classes/class-core-fields.php:196
 msgid "Include Total Costs"
@@ -604,26 +625,32 @@ msgid ""
 "Leave blank to keep the saved secret. The secret is never displayed after "
 "saving."
 msgstr ""
-"Pustite prazno, da ohranite shranjeno skrivnost. Skrivnost se po shranjevanju "
-"nikoli ne prikaže."
+"Pustite prazno, da ohranite shranjeno skrivnost. Skrivnost se po "
+"shranjevanju nikoli ne prikaže."
 
-#: classes/class-core-fields.php:499
+#: classes/class-core-fields.php:420
+#, fuzzy
+#| msgid "Card description sections must be returned as an array."
+msgid "Board/List destination filters must return an array."
+msgstr "Razdelki opisa kartice morajo biti vrnjeni kot polje."
+
+#: classes/class-core-fields.php:514
 msgid "One of the card switch elements has an invalid value."
 msgstr "Eden od elementov stikala kartice ima neveljavno vrednost."
 
-#: classes/class-core-fields.php:523
+#: classes/class-core-fields.php:538
 msgid "Selected card color is not valid."
 msgstr "Izbrana barva kartice ni veljavna."
 
-#: classes/class-core-fields.php:545
+#: classes/class-core-fields.php:560
 msgid "Selected card position is not valid."
 msgstr "Izbrani položaj kartice ni veljaven."
 
-#: classes/class-core-fields.php:571
+#: classes/class-core-fields.php:586
 msgid "Provided number is not a valid integer."
 msgstr "Navedena številka ni veljavno celo število."
 
-#: classes/class-core-fields.php:605
+#: classes/class-core-fields.php:620
 msgid "Invalid due date set."
 msgstr "Nastavljen je neveljaven rok."
 
@@ -692,16 +719,64 @@ msgstr ""
 "Preskočeno ustvarjanje kartice Trello za naročilo %d, ker je status %s "
 "omogočen, vendar ni izbran popoln cilj plošče in seznama."
 
-#: classes/class-core-trello-api.php:468
+#: classes/class-core-trello-api.php:441
+#, fuzzy, php-format
+#| msgid ""
+#| "Skipped overlapping Trello card creation for order %d, status %s, "
+#| "destination %s/%s, event %s."
+msgid ""
+"Skipped Trello card creation for order %d because the destination filter did "
+"not return an array."
+msgstr ""
+"Preskočeno prekrivajoče se ustvarjanje kartice Trello za naročilo %d, status "
+"%s, cilj %s/%s, dogodek %s."
+
+#: classes/class-core-trello-api.php:460
+#, fuzzy, php-format
+#| msgid ""
+#| "Skipped Trello card creation for order %d because a card already exists "
+#| "for status %s and destination %s/%s (event %s)."
+msgid ""
+"Skipped an invalid Trello destination for order %d because a board or list "
+"was missing."
+msgstr ""
+"Preskočeno ustvarjanje kartice Trello za naročilo %d, ker kartica že obstaja "
+"za status %s in cilj %s/%s (dogodek %s)."
+
+#: classes/class-core-trello-api.php:474
+#, fuzzy, php-format
+#| msgid ""
+#| "Skipped Trello card creation for order %d because a card already exists "
+#| "for status %s and destination %s/%s (event %s)."
+msgid ""
+"Skipped an invalid Trello destination for order %d because a board or list "
+"was empty after sanitization."
+msgstr ""
+"Preskočeno ustvarjanje kartice Trello za naročilo %d, ker kartica že obstaja "
+"za status %s in cilj %s/%s (dogodek %s)."
+
+#: classes/class-core-trello-api.php:490
+#, fuzzy, php-format
+#| msgid ""
+#| "Skipped overlapping Trello card creation for order %d, status %s, "
+#| "destination %s/%s, event %s."
+msgid ""
+"Skipped Trello card creation for order %d because no destination was "
+"resolved for status %s."
+msgstr ""
+"Preskočeno prekrivajoče se ustvarjanje kartice Trello za naročilo %d, status "
+"%s, cilj %s/%s, dogodek %s."
+
+#: classes/class-core-trello-api.php:532
 #, php-format
 msgid ""
 "Skipped overlapping Trello card creation for order %d, status %s, "
 "destination %s/%s, event %s."
 msgstr ""
-"Preskočeno prekrivajoče se ustvarjanje kartice Trello za naročilo %d, "
-"status %s, cilj %s/%s, dogodek %s."
+"Preskočeno prekrivajoče se ustvarjanje kartice Trello za naročilo %d, status "
+"%s, cilj %s/%s, dogodek %s."
 
-#: classes/class-core-trello-api.php:487
+#: classes/class-core-trello-api.php:551
 #, php-format
 msgid ""
 "Could not verify the saved Trello card for order %d, status %s, destination "
@@ -710,16 +785,16 @@ msgstr ""
 "Ni bilo mogoče preveriti shranjene kartice Trello za naročilo %d, status %s, "
 "cilj %s/%s, dogodek %s: %s"
 
-#: classes/class-core-trello-api.php:504
+#: classes/class-core-trello-api.php:568
 #, php-format
 msgid ""
 "Skipped Trello card creation for order %d because a card already exists for "
 "status %s and destination %s/%s (event %s)."
 msgstr ""
-"Preskočeno ustvarjanje kartice Trello za naročilo %d, ker kartica že "
-"obstaja za status %s in cilj %s/%s (dogodek %s)."
+"Preskočeno ustvarjanje kartice Trello za naročilo %d, ker kartica že obstaja "
+"za status %s in cilj %s/%s (dogodek %s)."
 
-#: classes/class-core-trello-api.php:574
+#: classes/class-core-trello-api.php:638
 #, php-format
 msgid ""
 "Could not acquire the Trello card creation claim for order %d, status %s, "
@@ -728,7 +803,7 @@ msgstr ""
 "Ni bilo mogoče pridobiti zahtevka za ustvarjanje kartice Trello za naročilo "
 "%d, status %s, cilj %s/%s."
 
-#: classes/class-core-trello-api.php:614
+#: classes/class-core-trello-api.php:678
 #, php-format
 msgid ""
 "Reclaimed a stale Trello card creation claim for order %d, status %s, "
@@ -737,7 +812,7 @@ msgstr ""
 "Ponovno pridobljen zastarel zahtevek za ustvarjanje kartice Trello za "
 "naročilo %d, status %s, cilj %s/%s."
 
-#: classes/class-core-trello-api.php:627
+#: classes/class-core-trello-api.php:691
 #, php-format
 msgid ""
 "Another request acquired the Trello card creation claim for order %d, status "
@@ -746,7 +821,7 @@ msgstr ""
 "Druga zahteva je pridobila zahtevek za ustvarjanje kartice Trello za "
 "naročilo %d, status %s, cilj %s/%s med obnovitvijo zastarelega zahtevka."
 
-#: classes/class-core-trello-api.php:666
+#: classes/class-core-trello-api.php:730
 #, php-format
 msgid ""
 "Could not release the Trello card creation claim for order %d, status %s, "
@@ -755,12 +830,12 @@ msgstr ""
 "Ni bilo mogoče sprostiti zahtevka za ustvarjanje kartice Trello za naročilo "
 "%d, status %s, cilj %s/%s."
 
-#: classes/class-core-trello-api.php:748 classes/class-core-trello-api.php:795
+#: classes/class-core-trello-api.php:811 classes/class-core-trello-api.php:858
 #, php-format
 msgid "Order with the ID %d does not exist."
 msgstr "Naročilo z ID-jem %d ne obstaja."
 
-#: classes/class-core-trello-api.php:782
+#: classes/class-core-trello-api.php:845
 #, php-format
 msgid ""
 "Card was not created for order ID %d as there was no status change. Old "
@@ -769,48 +844,48 @@ msgstr ""
 "Kartica ni bila ustvarjena za naročilo z ID-jem %d, ker ni bilo spremembe "
 "statusa. Stari status je bil %s, posodobljeni status pa je %s."
 
-#: classes/class-core-trello-api.php:865
+#: classes/class-core-trello-api.php:928
 msgid "We found some boards!"
 msgstr "Našli smo nekaj plošč!"
 
-#: classes/class-core-trello-api.php:878
+#: classes/class-core-trello-api.php:941
 msgid "No board IDs provided"
 msgstr "ID-ji plošč niso bili posredovani"
 
-#: classes/class-core-trello-api.php:889
+#: classes/class-core-trello-api.php:952
 msgid "No valid board IDs provided."
 msgstr "Veljavni ID-ji plošč niso bili posredovani."
 
-#: classes/class-core-trello-api.php:933
+#: classes/class-core-trello-api.php:996
 msgid "We found some lists!"
 msgstr "Našli smo nekaj seznamov!"
 
-#: classes/class-core-trello-api.php:958
+#: classes/class-core-trello-api.php:1021
 msgid "Invalid order ID."
 msgstr "Neveljaven ID naročila."
 
-#: classes/class-core-trello-api.php:962
+#: classes/class-core-trello-api.php:1025
 msgid "Board ID and List ID are required."
 msgstr "ID plošče in ID seznama sta obvezna."
 
-#: classes/class-core-trello-api.php:968
+#: classes/class-core-trello-api.php:1031
 #, php-format
 msgid "Order with ID %d not found."
 msgstr "Naročilo z ID-jem %d ni bilo najdeno."
 
-#: classes/class-core-trello-api.php:1006
+#: classes/class-core-trello-api.php:1069
 msgid ""
 "Card creation for this order status and destination is already in progress. "
 "Please try again shortly."
 msgstr ""
-"Ustvarjanje kartice za ta status naročila in cilj je že v teku. "
-"Poskusite znova kmalu."
+"Ustvarjanje kartice za ta status naročila in cilj je že v teku. Poskusite "
+"znova kmalu."
 
-#: classes/class-core-trello-api.php:1011
+#: classes/class-core-trello-api.php:1074
 msgid "Failed to create card. Check logs for details."
 msgstr "Ustvarjanje kartice ni uspelo. Preverite dnevnike za podrobnosti."
 
-#: classes/class-core-trello-api.php:1022
+#: classes/class-core-trello-api.php:1085
 #, php-format
 msgid ""
 "Could not verify the saved Trello card for order %d, status %s, destination "
@@ -819,7 +894,7 @@ msgstr ""
 "Ni bilo mogoče preveriti shranjene kartice Trello za naročilo %d, status %s, "
 "cilj %s/%s: %s"
 
-#: classes/class-core-trello-api.php:1032
+#: classes/class-core-trello-api.php:1095
 msgid ""
 "Could not verify whether a Trello card already exists. Please try again "
 "later."
@@ -827,34 +902,35 @@ msgstr ""
 "Ni bilo mogoče preveriti, ali kartica Trello že obstaja. Poskusite znova "
 "pozneje."
 
-#: classes/class-core-trello-api.php:1034
+#: classes/class-core-trello-api.php:1097
 msgid "A Trello card already exists for this order status and destination."
 msgstr "Za ta status naročila in cilj že obstaja kartica Trello."
 
-#: classes/class-core-trello-api.php:1048
+#: classes/class-core-trello-api.php:1111
 msgid "Card created successfully."
 msgstr "Kartica uspešno ustvarjena."
 
-#: classes/class-core-trello-api.php:1103
+#: classes/class-core-trello-api.php:1166
 #, php-format
 msgid "Could not reload order %d while checking for an existing Trello card."
 msgstr ""
 "Med preverjanjem obstoječe kartice Trello ni bilo mogoče ponovno naložiti "
 "naročila %d."
 
-#: classes/class-core-trello-api.php:1161
+#: classes/class-core-trello-api.php:1224
 msgid "Trello returned an unexpected response while checking a saved card."
-msgstr "Trello je med preverjanjem shranjene kartice vrnil nepričakovan odgovor."
+msgstr ""
+"Trello je med preverjanjem shranjene kartice vrnil nepričakovan odgovor."
 
-#: classes/class-core-trello-api.php:1276
+#: classes/class-core-trello-api.php:1339
 msgid "Failed getting single board info."
 msgstr "Pridobivanje informacij o posamezni plošči ni uspelo."
 
-#: classes/class-core-trello-api.php:1299
+#: classes/class-core-trello-api.php:1362
 msgid "Failed getting single list info."
 msgstr "Pridobivanje informacij o posameznem seznamu ni uspelo."
 
-#: classes/class-core-trello-api.php:1356
+#: classes/class-core-trello-api.php:1419
 msgid ""
 "Cannot post to Trello if $order has no order data in \"create_new_card "
 "method\"."
@@ -862,20 +938,20 @@ msgstr ""
 "Ni mogoče objaviti v Trello, če $order nima podatkov o naročilu v metodi "
 "\"create_new_card\"."
 
-#: classes/class-core-trello-api.php:1362
+#: classes/class-core-trello-api.php:1425
 msgid "Board and list are required before creating a Trello card."
 msgstr "Pred ustvarjanjem kartice Trello sta obvezna plošča in seznam."
 
-#: classes/class-core-trello-api.php:1371
+#: classes/class-core-trello-api.php:1434
 #, php-format
 msgid ""
 "Board ID <strong>%s</strong> is not in a valid format. Please check the "
 "selected board for order status <strong>%s</strong>."
 msgstr ""
-"ID plošče <strong>%s</strong> ni v veljavni obliki. Preverite izbrano "
-"ploščo za status naročila <strong>%s</strong>."
+"ID plošče <strong>%s</strong> ni v veljavni obliki. Preverite izbrano ploščo "
+"za status naročila <strong>%s</strong>."
 
-#: classes/class-core-trello-api.php:1391
+#: classes/class-core-trello-api.php:1454
 #, php-format
 msgid ""
 "List ID <strong>%s</strong> is not in a valid format. Please check the "
@@ -884,44 +960,44 @@ msgstr ""
 "ID seznama <strong>%s</strong> ni v veljavni obliki. Preverite izbrani "
 "seznam za status naročila <strong>%s</strong>."
 
-#: classes/class-core-trello-api.php:1406
+#: classes/class-core-trello-api.php:1469
 #, php-format
 msgid "Order #%d"
 msgstr "Naročilo #%d"
 
-#: classes/class-core-trello-api.php:1420
+#: classes/class-core-trello-api.php:1483
 msgid "Order"
 msgstr "Naročilo"
 
-#: classes/class-core-trello-api.php:1426
+#: classes/class-core-trello-api.php:1489
 msgid "Billing address"
 msgstr "Naslov za račun"
 
-#: classes/class-core-trello-api.php:1435
+#: classes/class-core-trello-api.php:1498
 msgid "Shipping address"
 msgstr "Naslov za dostavo"
 
-#: classes/class-core-trello-api.php:1444
+#: classes/class-core-trello-api.php:1507
 msgid "Shipping method and costs"
 msgstr "Način dostave in stroški"
 
-#: classes/class-core-trello-api.php:1452
+#: classes/class-core-trello-api.php:1515
 msgid "Products"
 msgstr "Izdelki"
 
-#: classes/class-core-trello-api.php:1477
+#: classes/class-core-trello-api.php:1540
 msgid "Total costs"
 msgstr "Skupni stroški"
 
-#: classes/class-core-trello-api.php:1484
+#: classes/class-core-trello-api.php:1547
 msgid "Card description sections must be returned as an array."
 msgstr "Razdelki opisa kartice morajo biti vrnjeni kot polje."
 
-#: classes/class-core-trello-api.php:1491
+#: classes/class-core-trello-api.php:1554
 msgid "Card description sections must have string IDs and string content."
 msgstr "Razdelki opisa kartice morajo imeti nizovne ID-je in nizovno vsebino."
 
-#: classes/class-core-trello-api.php:1503
+#: classes/class-core-trello-api.php:1566
 #, php-format
 msgid ""
 "Due date format is invalid for order status <strong>%s</strong>. Please try "
@@ -930,20 +1006,20 @@ msgstr ""
 "Oblika roka ni veljavna za status naročila <strong>%s</strong>. Poskusite "
 "ponovno shraniti stran Kartice."
 
-#: classes/class-core-trello-api.php:1542
+#: classes/class-core-trello-api.php:1605
 msgid "No card ID found."
 msgstr "ID kartice ni bil najden."
 
-#: classes/class-core-trello-api.php:1593
+#: classes/class-core-trello-api.php:1656
 msgid "Updated order meta history"
 msgstr "Posodobljena zgodovina meta podatkov naročila"
 
-#: classes/class-core-trello-api.php:1596
+#: classes/class-core-trello-api.php:1659
 msgid "Succesfully created card."
 msgstr "Kartica uspešno ustvarjena."
 
-#: classes/class-core-trello-api.php:1631
-#: classes/class-core-trello-api.php:1665
+#: classes/class-core-trello-api.php:1694
+#: classes/class-core-trello-api.php:1728
 msgid "Succesfully updated card."
 msgstr "Kartica uspešno posodobljena."
 
@@ -956,8 +1032,8 @@ msgid ""
 "The Trello authorization has expired. Reconnect your Trello account in the "
 "plugin settings."
 msgstr ""
-"Pooblastilo Trello je poteklo. V nastavitvah vtičnika ponovno povežite "
-"svoj račun Trello."
+"Pooblastilo Trello je poteklo. V nastavitvah vtičnika ponovno povežite svoj "
+"račun Trello."
 
 #: classes/class-core-trello-oauth.php:162
 msgid "Reconnect Trello account"
@@ -993,7 +1069,8 @@ msgstr "Račun Trello ni povezan."
 
 #: classes/class-core-trello-oauth.php:184
 msgid "Enter and save the OAuth client ID and secret above before connecting."
-msgstr "Pred povezovanjem zgoraj vnesite in shranite OAuth ID odjemalca in skrivnost."
+msgstr ""
+"Pred povezovanjem zgoraj vnesite in shranite OAuth ID odjemalca in skrivnost."
 
 #: classes/class-core-trello-oauth.php:199
 msgid "You do not have permission to connect a Trello account."
@@ -1001,7 +1078,8 @@ msgstr "Nimate dovoljenja za povezovanje računa Trello."
 
 #: classes/class-core-trello-oauth.php:208
 msgid "Save your Trello OAuth client ID and client secret before connecting."
-msgstr "Pred povezovanjem shranite OAuth ID odjemalca in skrivnost odjemalca Trello."
+msgstr ""
+"Pred povezovanjem shranite OAuth ID odjemalca in skrivnost odjemalca Trello."
 
 #: classes/class-core-trello-oauth.php:216
 msgid "Unable to generate secure Trello OAuth state."
@@ -1058,8 +1136,7 @@ msgid ""
 "Trello rejected the authorization or returned an invalid account response "
 "(HTTP %d)."
 msgstr ""
-"Trello je zavrnil pooblastilo ali vrnil neveljaven odgovor računa "
-"(HTTP %d)."
+"Trello je zavrnil pooblastilo ali vrnil neveljaven odgovor računa (HTTP %d)."
 
 #: classes/class-core-trello-oauth.php:339
 msgid "Trello OAuth connection validation failed."
@@ -1511,7 +1588,7 @@ msgstr "Dostava:"
 msgid "Tax:"
 msgstr "Davek:"
 
-#: ltw-order-to-board-sync.php:207
+#: ltw-order-to-board-sync.php:199
 msgid ""
 "LTW Order-to-Board Sync requires WooCommerce to be installed and active."
 msgstr ""

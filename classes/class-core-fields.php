@@ -407,6 +407,21 @@ class Fields {
 							}
 						}
 
+						// Let extensions safely retain validated data stored alongside each Board/List destination.
+						$validated_destinations = apply_filters(
+							Hooks::FILTER_BOARD_LIST_DESTINATIONS,
+							$validated[ $section_key ][ $context_key ][ $field_key ] ?? [],
+							$field_value,
+							$section_key,
+							$context_key
+						);
+
+						if ( ! is_array( $validated_destinations ) ) {
+							return new \WP_Error( 'invalid_destinations', __( 'Board/List destination filters must return an array.', 'ltw-order-to-board-sync' ) );
+						}
+
+						$validated[ $section_key ][ $context_key ][ $field_key ] = $validated_destinations;
+
 						continue;
 					}
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LTW Order-to-Board Sync\n"
-"POT-Creation-Date: 2026-10-17 09:49+0200\n"
-"PO-Revision-Date: 2026-10-17 09:49+0200\n"
+"POT-Creation-Date: 2026-10-23 14:25+0200\n"
+"PO-Revision-Date: 2026-10-23 14:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: lessthanweb\n"
 "Language: en_US\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Logs"
 msgstr ""
 
-#: classes/class-admin-assets.php:70 classes/class-admin-page.php:684
+#: classes/class-admin-assets.php:70 classes/class-admin-page.php:739
 msgid "Currently there are no logs available."
 msgstr ""
 
@@ -289,7 +289,7 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: classes/class-admin-page.php:231 classes/class-admin-page.php:555
+#: classes/class-admin-page.php:231 classes/class-admin-page.php:610
 msgid "No order statuses found."
 msgstr ""
 
@@ -298,104 +298,115 @@ msgstr ""
 msgid "Create a Trello card for %s orders"
 msgstr ""
 
-#: classes/class-admin-page.php:452
+#: classes/class-admin-page.php:453
 msgid "Board and List destinations"
 msgstr ""
 
-#: classes/class-admin-page.php:490
+#: classes/class-admin-page.php:531
 msgid "Add New board/list"
 msgstr ""
 
-#: classes/class-admin-page.php:511
+#: classes/class-admin-page.php:554
 msgid "Connect Trello to configure card settings"
 msgstr ""
 
-#: classes/class-admin-page.php:512
+#: classes/class-admin-page.php:555
 msgid ""
 "Connect a Trello account before choosing boards and lists for your order "
 "statuses."
 msgstr ""
 
-#: classes/class-admin-page.php:513
+#: classes/class-admin-page.php:556
 msgid "Open Trello settings"
 msgstr ""
 
-#: classes/class-admin-page.php
-msgid "Upgrade to LTW Order-to-Board Sync Pro to send cards for each order status to multiple Trello boards and lists, and to use custom order statuses registered by extensions or custom code."
-msgstr ""
-
-#: classes/class-admin-page.php:520
+#: classes/class-admin-page.php:563
 msgid ""
 "These settings are applied per WooCommerce order status. Choose the Trello "
 "board and list for each status, then enable card creation only for the order "
 "statuses that should send cards to Trello."
 msgstr ""
 
-#: classes/class-admin-page.php:537
+#: classes/class-admin-page.php:573
+msgid "Need more destinations?"
+msgstr ""
+
+#: classes/class-admin-page.php:574
+msgid ""
+"Upgrade to LTW Order-to-Board Sync Pro to send cards for each order status "
+"to multiple Trello boards and lists, and to use custom order statuses "
+"registered by extensions or custom code."
+msgstr ""
+
+#: classes/class-admin-page.php:576
+msgid "Explore Pro"
+msgstr ""
+
+#: classes/class-admin-page.php:592
 #, php-format
 msgid ""
 "Settings for %s orders only. When this status is reached, the plugin can "
 "create a Trello card using the board and list configured below."
 msgstr ""
 
-#: classes/class-admin-page.php:649
+#: classes/class-admin-page.php:704
 msgid "Getting started"
 msgstr ""
 
-#: classes/class-admin-page.php:652
+#: classes/class-admin-page.php:707
 msgid "Connect your store to Trello"
 msgstr ""
 
-#: classes/class-admin-page.php:653
+#: classes/class-admin-page.php:708
 msgid ""
 "You're almost ready to start creating Trello cards from WooCommerce orders."
 msgstr ""
 
-#: classes/class-admin-page.php:655
+#: classes/class-admin-page.php:710
 msgid "Create a confidential OAuth 2.0 client in your Trello app settings."
 msgstr ""
 
-#: classes/class-admin-page.php:656
+#: classes/class-admin-page.php:711
 msgid "Save the client ID and secret in the Trello OAuth 2.0 settings."
 msgstr ""
 
-#: classes/class-admin-page.php:657
+#: classes/class-admin-page.php:712
 msgid "Connect your Trello account and approve the requested access."
 msgstr ""
 
-#: classes/class-admin-page.php:660
+#: classes/class-admin-page.php:715
 msgid "Start setup"
 msgstr ""
 
-#: classes/class-admin-page.php:661
+#: classes/class-admin-page.php:716
 msgid ""
 "OAuth tokens are used only to communicate with Trello and are never added to "
 "cards or logs."
 msgstr ""
 
-#: classes/class-admin-page.php:740 classes/class-admin-page.php:774
-#: classes/class-core-trello-api.php:854 classes/class-core-trello-api.php:922
-#: classes/class-core-trello-api.php:950
+#: classes/class-admin-page.php:795 classes/class-admin-page.php:829
+#: classes/class-core-trello-api.php:917 classes/class-core-trello-api.php:985
+#: classes/class-core-trello-api.php:1013
 msgid "Insufficient permissions."
 msgstr ""
 
-#: classes/class-admin-page.php:747
+#: classes/class-admin-page.php:802
 msgid "Invalid log ID."
 msgstr ""
 
-#: classes/class-admin-page.php:755
+#: classes/class-admin-page.php:810
 msgid "Log deleted successfully."
 msgstr ""
 
-#: classes/class-admin-page.php:781
+#: classes/class-admin-page.php:836
 msgid "All logs deleted successfully."
 msgstr ""
 
-#: classes/class-admin-page.php:783
+#: classes/class-admin-page.php:838
 msgid "Unable to delete all logs."
 msgstr ""
 
-#: classes/class-admin-page.php:797
+#: classes/class-admin-page.php:852
 msgid "Delete All"
 msgstr ""
 
@@ -555,23 +566,27 @@ msgid ""
 "saving."
 msgstr ""
 
-#: classes/class-core-fields.php:499
+#: classes/class-core-fields.php:420
+msgid "Board/List destination filters must return an array."
+msgstr ""
+
+#: classes/class-core-fields.php:514
 msgid "One of the card switch elements has an invalid value."
 msgstr ""
 
-#: classes/class-core-fields.php:523
+#: classes/class-core-fields.php:538
 msgid "Selected card color is not valid."
 msgstr ""
 
-#: classes/class-core-fields.php:545
+#: classes/class-core-fields.php:560
 msgid "Selected card position is not valid."
 msgstr ""
 
-#: classes/class-core-fields.php:571
+#: classes/class-core-fields.php:586
 msgid "Provided number is not a valid integer."
 msgstr ""
 
-#: classes/class-core-fields.php:605
+#: classes/class-core-fields.php:620
 msgid "Invalid due date set."
 msgstr ""
 
@@ -634,226 +649,254 @@ msgid ""
 "has no complete board and list destination selected."
 msgstr ""
 
-#: classes/class-core-trello-api.php:468
+#: classes/class-core-trello-api.php:441
+#, php-format
+msgid ""
+"Skipped Trello card creation for order %d because the destination filter did "
+"not return an array."
+msgstr ""
+
+#: classes/class-core-trello-api.php:460
+#, php-format
+msgid ""
+"Skipped an invalid Trello destination for order %d because a board or list "
+"was missing."
+msgstr ""
+
+#: classes/class-core-trello-api.php:474
+#, php-format
+msgid ""
+"Skipped an invalid Trello destination for order %d because a board or list "
+"was empty after sanitization."
+msgstr ""
+
+#: classes/class-core-trello-api.php:490
+#, php-format
+msgid ""
+"Skipped Trello card creation for order %d because no destination was "
+"resolved for status %s."
+msgstr ""
+
+#: classes/class-core-trello-api.php:532
 #, php-format
 msgid ""
 "Skipped overlapping Trello card creation for order %d, status %s, "
 "destination %s/%s, event %s."
 msgstr ""
 
-#: classes/class-core-trello-api.php:487
+#: classes/class-core-trello-api.php:551
 #, php-format
 msgid ""
 "Could not verify the saved Trello card for order %d, status %s, destination "
 "%s/%s, event %s: %s"
 msgstr ""
 
-#: classes/class-core-trello-api.php:504
+#: classes/class-core-trello-api.php:568
 #, php-format
 msgid ""
 "Skipped Trello card creation for order %d because a card already exists for "
 "status %s and destination %s/%s (event %s)."
 msgstr ""
 
-#: classes/class-core-trello-api.php:574
+#: classes/class-core-trello-api.php:638
 #, php-format
 msgid ""
 "Could not acquire the Trello card creation claim for order %d, status %s, "
 "destination %s/%s."
 msgstr ""
 
-#: classes/class-core-trello-api.php:614
+#: classes/class-core-trello-api.php:678
 #, php-format
 msgid ""
 "Reclaimed a stale Trello card creation claim for order %d, status %s, "
 "destination %s/%s."
 msgstr ""
 
-#: classes/class-core-trello-api.php:627
+#: classes/class-core-trello-api.php:691
 #, php-format
 msgid ""
 "Another request acquired the Trello card creation claim for order %d, status "
 "%s, destination %s/%s during stale-claim recovery."
 msgstr ""
 
-#: classes/class-core-trello-api.php:666
+#: classes/class-core-trello-api.php:730
 #, php-format
 msgid ""
 "Could not release the Trello card creation claim for order %d, status %s, "
 "destination %s/%s."
 msgstr ""
 
-#: classes/class-core-trello-api.php:748 classes/class-core-trello-api.php:795
+#: classes/class-core-trello-api.php:811 classes/class-core-trello-api.php:858
 #, php-format
 msgid "Order with the ID %d does not exist."
 msgstr ""
 
-#: classes/class-core-trello-api.php:782
+#: classes/class-core-trello-api.php:845
 #, php-format
 msgid ""
 "Card was not created for order ID %d as there was no status change. Old "
 "status was %s and updated status is %s."
 msgstr ""
 
-#: classes/class-core-trello-api.php:865
+#: classes/class-core-trello-api.php:928
 msgid "We found some boards!"
 msgstr ""
 
-#: classes/class-core-trello-api.php:878
+#: classes/class-core-trello-api.php:941
 msgid "No board IDs provided"
 msgstr ""
 
-#: classes/class-core-trello-api.php:889
+#: classes/class-core-trello-api.php:952
 msgid "No valid board IDs provided."
 msgstr ""
 
-#: classes/class-core-trello-api.php:933
+#: classes/class-core-trello-api.php:996
 msgid "We found some lists!"
 msgstr ""
 
-#: classes/class-core-trello-api.php:958
+#: classes/class-core-trello-api.php:1021
 msgid "Invalid order ID."
 msgstr ""
 
-#: classes/class-core-trello-api.php:962
+#: classes/class-core-trello-api.php:1025
 msgid "Board ID and List ID are required."
 msgstr ""
 
-#: classes/class-core-trello-api.php:968
+#: classes/class-core-trello-api.php:1031
 #, php-format
 msgid "Order with ID %d not found."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1006
+#: classes/class-core-trello-api.php:1069
 msgid ""
 "Card creation for this order status and destination is already in progress. "
 "Please try again shortly."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1011
+#: classes/class-core-trello-api.php:1074
 msgid "Failed to create card. Check logs for details."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1022
+#: classes/class-core-trello-api.php:1085
 #, php-format
 msgid ""
 "Could not verify the saved Trello card for order %d, status %s, destination "
 "%s/%s: %s"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1032
+#: classes/class-core-trello-api.php:1095
 msgid ""
 "Could not verify whether a Trello card already exists. Please try again "
 "later."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1034
+#: classes/class-core-trello-api.php:1097
 msgid "A Trello card already exists for this order status and destination."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1048
+#: classes/class-core-trello-api.php:1111
 msgid "Card created successfully."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1103
+#: classes/class-core-trello-api.php:1166
 #, php-format
 msgid "Could not reload order %d while checking for an existing Trello card."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1161
+#: classes/class-core-trello-api.php:1224
 msgid "Trello returned an unexpected response while checking a saved card."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1276
+#: classes/class-core-trello-api.php:1339
 msgid "Failed getting single board info."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1299
+#: classes/class-core-trello-api.php:1362
 msgid "Failed getting single list info."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1356
+#: classes/class-core-trello-api.php:1419
 msgid ""
 "Cannot post to Trello if $order has no order data in \"create_new_card "
 "method\"."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1362
+#: classes/class-core-trello-api.php:1425
 msgid "Board and list are required before creating a Trello card."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1371
+#: classes/class-core-trello-api.php:1434
 #, php-format
 msgid ""
 "Board ID <strong>%s</strong> is not in a valid format. Please check the "
 "selected board for order status <strong>%s</strong>."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1391
+#: classes/class-core-trello-api.php:1454
 #, php-format
 msgid ""
 "List ID <strong>%s</strong> is not in a valid format. Please check the "
 "selected list for order status <strong>%s</strong>."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1406
+#: classes/class-core-trello-api.php:1469
 #, php-format
 msgid "Order #%d"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1420
+#: classes/class-core-trello-api.php:1483
 msgid "Order"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1426
+#: classes/class-core-trello-api.php:1489
 msgid "Billing address"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1435
+#: classes/class-core-trello-api.php:1498
 msgid "Shipping address"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1444
+#: classes/class-core-trello-api.php:1507
 msgid "Shipping method and costs"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1452
+#: classes/class-core-trello-api.php:1515
 msgid "Products"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1477
+#: classes/class-core-trello-api.php:1540
 msgid "Total costs"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1484
+#: classes/class-core-trello-api.php:1547
 msgid "Card description sections must be returned as an array."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1491
+#: classes/class-core-trello-api.php:1554
 msgid "Card description sections must have string IDs and string content."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1503
+#: classes/class-core-trello-api.php:1566
 #, php-format
 msgid ""
 "Due date format is invalid for order status <strong>%s</strong>. Please try "
 "resaving the Cards page."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1542
+#: classes/class-core-trello-api.php:1605
 msgid "No card ID found."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1593
+#: classes/class-core-trello-api.php:1656
 msgid "Updated order meta history"
 msgstr ""
 
-#: classes/class-core-trello-api.php:1596
+#: classes/class-core-trello-api.php:1659
 msgid "Succesfully created card."
 msgstr ""
 
-#: classes/class-core-trello-api.php:1631
-#: classes/class-core-trello-api.php:1665
+#: classes/class-core-trello-api.php:1694
+#: classes/class-core-trello-api.php:1728
 msgid "Succesfully updated card."
 msgstr ""
 
@@ -1409,7 +1452,7 @@ msgstr ""
 msgid "Tax:"
 msgstr ""
 
-#: ltw-order-to-board-sync.php:207
+#: ltw-order-to-board-sync.php:199
 msgid ""
 "LTW Order-to-Board Sync requires WooCommerce to be installed and active."
 msgstr ""

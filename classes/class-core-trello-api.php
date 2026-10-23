@@ -432,6 +432,70 @@ class Trello_API {
 				// Merge arrays
 				$order_data = $this->get_order_data( $order );
 
+				// Let extensions resolve destinations before card-creation claims and requests begin.
+				$destinations = apply_filters( Hooks::FILTER_CARD_DESTINATIONS, $destinations, $order, $card );
+
+				if ( ! is_array( $destinations ) ) {
+					$this->logger->error(
+						sprintf(
+							__( 'Skipped Trello card creation for order %d because the destination filter did not return an array.', 'ltw-order-to-board-sync' ),
+							$order->get_id()
+						)
+					);
+
+					return false;
+				}
+
+				$resolved_destinations = [];
+
+				foreach ( $destinations as $destination ) {
+					if (
+						! is_array( $destination )
+						|| ! isset( $destination['board_id'], $destination['list_id'] )
+						|| ! is_scalar( $destination['board_id'] )
+						|| ! is_scalar( $destination['list_id'] )
+					) {
+						$this->logger->error(
+							sprintf(
+								__( 'Skipped an invalid Trello destination for order %d because a board or list was missing.', 'ltw-order-to-board-sync' ),
+								$order->get_id()
+							)
+						);
+
+						continue;
+					}
+
+					$destination['board_id'] = sanitize_text_field( (string) $destination['board_id'] );
+					$destination['list_id'] = sanitize_text_field( (string) $destination['list_id'] );
+
+					if ( $destination['board_id'] === '' || $destination['list_id'] === '' ) {
+						$this->logger->error(
+							sprintf(
+								__( 'Skipped an invalid Trello destination for order %d because a board or list was empty after sanitization.', 'ltw-order-to-board-sync' ),
+								$order->get_id()
+							)
+						);
+
+						continue;
+					}
+
+					$resolved_destinations[] = $destination;
+				}
+
+				$destinations = $resolved_destinations;
+
+				if ( empty( $destinations ) ) {
+					$this->logger->warning(
+						sprintf(
+							__( 'Skipped Trello card creation for order %d because no destination was resolved for status %s.', 'ltw-order-to-board-sync' ),
+							$order->get_id(),
+							$order->get_status()
+						)
+					);
+
+					return false;
+				}
+
 				foreach ( $destinations as $destination ) {
 					$card_settings = array_merge( $card, $destination );
 
@@ -702,10 +766,9 @@ class Trello_API {
 				$list_id = sanitize_text_field( (string) ( $destination['list_id'] ?? '' ) );
 
 				if ( '' !== $board_id && '' !== $list_id ) {
-					$destinations[] = [
-						'board_id' => $board_id,
-						'list_id' => $list_id,
-					];
+					$destination['board_id'] = $board_id;
+					$destination['list_id'] = $list_id;
+					$destinations[] = $destination;
 				}
 			}
 		} elseif ( ! empty( $card['board_id'] ) || ! empty( $card['list_id'] ) ) {

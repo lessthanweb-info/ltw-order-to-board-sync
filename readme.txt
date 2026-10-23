@@ -4,7 +4,7 @@ Tags: woocommerce, trello, order management, automation, project management
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,7 @@ The Free plugin requires WooCommerce and a Trello account. It sends the card det
 The optional, separately installed LTW Order-to-Board Sync Pro add-on builds on this Free plugin. Pro requires the Free plugin and adds:
 
 * Multiple Trello board and list destinations for each order status.
+* Conditional routing to Board/List destinations based on order details.
 * Support for order statuses registered by other plugins or custom code.
 * Selected WooCommerce order metadata in Trello card descriptions.
 * Trello card URLs saved in order history and displayed as links.
@@ -95,3 +96,15 @@ The Free plugin provides documented actions and filters for extensions. See docs
 == Support ==
 
 https://www.lessthanweb.com/order-to-board-sync-plugin
+
+== Changelog ==
+
+= 1.1.0 =
+* Added extension hooks to retain validated per-destination settings and filter the Board/List destinations used before card creation.
+* Added support for grouped fields and custom add-button labels in repeatable Board/List settings.
+* Displayed notes configured for select fields.
+* Added extra hooks that extensions can use to add destination-specific behavior.
+* Removed compiled .mo file for English.
+
+= 1.0.0 =
+* Initial release of LTW Order-to-Board Sync for WooCommerce and Trello.
